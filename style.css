@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+
+:root{
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+.back{
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 76%;
+    height: 80%;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+.part-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inaugural{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+.title{
+    width: 70%;
+    color: var(--VeryDarkMagenta);
+    font-size: 43px;
+
+}
+
+p{
+    color: var(--DarkGrayishMagenta);
+    line-height: 1.3;
+}
+
+.Ratings{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.l{
+    background-color: var(--LightGrayishMagenta);
+    width: 100%;
+    padding: 15px 35px 15px 30px;
+    font-weight: 900;
+    border-radius: 10px;
+    color: var(--VeryDarkMagenta);
+}
+
+.n2{
+    margin-left: 40px;
+}
+
+.n3{
+    margin-left: 80px;
+}
+
+.star{
+    padding-right: 10px;
+}
+
+.part-bottom{
+    display: flex;
+    gap: 1rem;
+}
+
+.comment{
+    background-color: var(--VeryDarkMagenta);
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: max-content;
+}
+
+.c2{
+    margin-top: 20px;
+}
+
+.c3{
+    margin-top: 40px;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+}
+
+.user{
+    color: var(--LightGrayishMagenta);
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.special{
+    color: var(--LightGrayishMagenta);
+}
+
+span{
+    color: var(--SoftPink);
+}
+
+.photograph{
+    border-radius: 50%;
+    width: 43px;
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        flex-direction: column; 
+        width: 90%;
+    }
+
+    .part-top{
+        flex-direction: column;
+    }
+
+    .inaugural{
+        width: 100%;
+        text-align: center;
+    }
+
+    .title{
+        width: 95%;
+    }
+
+    .Ratings{
+        margin: 0;
+    }
+
+    .l{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .star{
+        margin-bottom: 10px;
+    }
+
+    .part-bottom{
+        flex-wrap: wrap;
+        padding-bottom: 25px;
+
+    }
+
+    .comment{
+
+    }
+    
+}
